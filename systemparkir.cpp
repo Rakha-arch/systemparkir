@@ -29,7 +29,8 @@ public:
         }
         if (parkingSlots.find(licensePlate) != parkingSlots.end()) 
         {
-           
+            cout << "⚠️ Car with license plate " << licensePlate << " is already parked." << endl;
+            return false;
         }
        
     }
