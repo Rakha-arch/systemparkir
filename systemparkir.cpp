@@ -12,7 +12,11 @@ struct Car {
 };
 
 class ParkingLot {
-
+private:
+    unordered_map<string, Car> parkingSlots;
+    int capacity;
+    double totalEarnings;
+    double ratePerHour;
 
 
         {
