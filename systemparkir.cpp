@@ -18,7 +18,11 @@ private:
     double totalEarnings;
     double ratePerHour;
 
+public:
+    ParkingLot(int cap, double rate) : capacity(cap), ratePerHour(rate), totalEarnings(0) {}
 
+    bool parkCar(const string& licensePlate) {
+        if ((int)parkingSlots.size() >= capacity) 
         {
           
         }
