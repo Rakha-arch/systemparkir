@@ -32,7 +32,11 @@ public:
             cout << "⚠️ Car with license plate " << licensePlate << " is already parked." << endl;
             return false;
         }
-       
+        time_t now = time(nullptr);
+        Car newCar{licensePlate, now};
+        parkingSlots[licensePlate] = newCar;
+        cout << "✅ Car " << licensePlate << " parked at " << ctime(&now);
+        return true;
     }
 
     
