@@ -39,7 +39,7 @@ public:
         return true;
     }
 
-    
+    bool leaveCar(const string& licensePlate) 
     {
         
         }
