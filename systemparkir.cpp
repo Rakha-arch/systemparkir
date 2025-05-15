@@ -27,7 +27,7 @@ public:
             cout << "⚠️ Parking lot is full. Cannot park car " << licensePlate << "." << endl;
             return false;
         }
-       
+        if (parkingSlots.find(licensePlate) != parkingSlots.end()) 
         {
            
         }
