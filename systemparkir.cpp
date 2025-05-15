@@ -24,7 +24,8 @@ public:
     bool parkCar(const string& licensePlate) {
         if ((int)parkingSlots.size() >= capacity) 
         {
-          
+            cout << "⚠️ Parking lot is full. Cannot park car " << licensePlate << "." << endl;
+            return false;
         }
        
         {
